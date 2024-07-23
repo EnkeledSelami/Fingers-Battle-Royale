@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<!-- Difficulty Level Section -->
+	<TextView
+        android:id="@+id/difficulty_level_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Difficulty Level"
+        android:textSize="24sp"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true" />
+
+	<!-- Radio buttons with Difficulty Levels -->
+	<RadioGroup
+        android:id="@+id/difficulty_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/difficulty_level_title"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true">
+
+		<RadioButton
+            android:id="@+id/radio_easy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Easy" />
+
+		<RadioButton
+            android:id="@+id/radio_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium" />
+
+		<RadioButton
+            android:id="@+id/radio_hard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hard" />
+
+	</RadioGroup>
+
+	<!-- Switch button for Background Audio -->
+	<Switch
+        android:id="@+id/background_sound_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Background Audio"
+        android:layout_below="@id/difficulty_radio_group"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true" />
+
+	<!-- Play button -->
+	<Button
+        android:id="@+id/play_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:layout_below="@id/background_sound_switch"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+	<!-- Logo Image -->
+	<ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp" />
+
+</RelativeLayout>

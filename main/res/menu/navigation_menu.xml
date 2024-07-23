@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!--
+    It was supposed to be a navigation menu where Settings and Statistics options 
+	should have been shown after clicking an icon but when I tried to do that I messed up
+	with the apllication so I went back at this version with just 2 icons in the toolbar.
+-->
+	<group android:checkableBehavior="single">
+		<item
+            android:id="@+id/menu_settings"
+            android:title="Settings"
+            android:icon="@drawable/baseline_settings_24" />
+		<item
+            android:id="@+id/menu_statistics"
+            android:title="Statistics"
+            android:icon="@drawable/baseline_statistics_24" />
+	</group>
+
+</menu>
